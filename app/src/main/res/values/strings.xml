@@ -6,7 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
     <string name="action_profile">Profile</string>
-
     <string name="service_name">Deezer</string>
     <string name="service_category">Música</string>
     <string name="service_moreinfo">Mas info ></string>
@@ -14,5 +13,12 @@
     <string name="services_select_message">Tienes 1 Servicio sin usar, activalo ahora!</string>
     <string name="cancel">Cancel</string>
     <string name="ok">Ok</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Dialog Activate Service texts-->
+    <string name="dialog_activate_service_title">Activar Servicio</string>
+    <string name="dialog_activate_service_ok">Activar</string>
+    <string name="dialog_activate_text_instructions">Service wil be one of the Premium Services included in your plan, it has no additional cost. With Qello you will be able to stream music concert and documentary videos.</string>
+
 
 </resources>
