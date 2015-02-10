@@ -130,8 +130,8 @@ public class MainActivity extends ActionBarActivity {
                             Toast.makeText(MainActivity.this,
                                     R.string.services_select_message,
                                     Toast.LENGTH_SHORT).show();
-
-
+                            ImageView im = (ImageView)view.findViewById(R.id.service_action);
+                            im.setImageResource(R.drawable.check_active_scheduled);
                         }
                     });
             convertView.findViewById(R.id.service_image).setOnClickListener(
