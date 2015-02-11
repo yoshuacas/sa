@@ -6,6 +6,18 @@ android:layout_height="match_parent"
 >
 
     <TextView
+        android:id="@+id/dialog_activate_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/dialog_activate_text_header"
+        style="@style/HeaderText"/>
+
+
+    <TextView
         android:id="@+id/dialog_activate_instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +25,8 @@ android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="4dp"
-        android:text="@string/dialog_activate_text_instructions" />
+        android:text="@string/dialog_activate_text_instructions"
+        style="@style/CategoryText"/>
 
     <LinearLayout
         android:id="@+id/dialog_activate_ok_button_5"
@@ -28,19 +41,22 @@ android:layout_height="match_parent"
             android:id="@+id/dialog_activate_ok_button"
             android:layout_width="fill_parent"
             android:layout_height="35dp"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/lightbox_green_button"
+
             android:clickable="true"
             android:focusable="true">
 
+
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal"
+                android:background="@drawable/green_button_left"
                 >
 
                 <ImageView
@@ -48,16 +64,40 @@ android:layout_height="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:src="@drawable/lightbox_activate_icon"
+                    android:layout_marginRight="5dp"/>
 
-                    />
                 <TextView
                     android:id="@+id/dialog_activate_ok"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/dialog_activate_text_ok"
-
+                    style="@style/ButtonTextWhite"
                     />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_button_right"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/dialog_activate_ok_price"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/dialog_activate_text_price"
+                    style="@style/PriceText"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -71,7 +111,6 @@ android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
-
             android:background="@color/white">
 
             <TextView
@@ -79,7 +118,8 @@ android:layout_height="match_parent"
                 android:layout_height="fill_parent"
                 android:layout_width="fill_parent"
                 android:text="@string/dialog_activate_text_cancel"
-                android:gravity="center"/>
+                android:gravity="center"
+                style="@style/ButtonTextGray"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -8,7 +8,7 @@
     <string name="action_profile">Profile</string>
     <string name="service_name">Deezer</string>
     <string name="service_category">Música</string>
-    <string name="service_moreinfo">Mas info ></string>
+    <string name="service_moreinfo">Más info ></string>
     <string name="icon_status_notactive">Activar</string>
     <string name="services_select_message">Tienes 1 Servicio sin usar, activalo ahora!</string>
     <string name="cancel">Cancel</string>
@@ -18,8 +18,10 @@
     <!-- Dialog Activate Service texts -->
     <string name="dialog_activate_text_header">Activar {Servicio}</string>
     <string name="dialog_activate_text_ok">Activate</string>
+    <string name="dialog_activate_text_price">$15900</string>
     <string name="dialog_activate_text_cancel">Cancel</string>
     <string name="dialog_activate_text_instructions">{Servicio} wil be one of the Premium Services included in your plan, it has no additional cost. With {Servicio} you will be able to stream music concert and documentary videos.</string>
+
     <string name="title_activity_dialog_activate">DialogActivate</string>
     <string name="title_activity_result_activate">ResultActivate</string>
 

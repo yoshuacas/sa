@@ -21,6 +21,7 @@
             android:name=".DialogActivate"
             android:label="@string/dialog_activate_text_header"
             android:parentActivityName=".MainActivity"
+            android:theme="@style/Smartapps.Theme.Dialog"
              >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
