@@ -42,5 +42,18 @@
         </style>
 
 
+    <!-- Custom Dialog styling -->
+    <style name="Smartapps.Theme.Dialog"
+        parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+
+    <!-- COLORS -->
+    <color name="black">#FF000000</color>
+    <color name="whitegrey">#FFF2F2F2</color>
+    <color name="white">#FFFFFFFF</color>
+
+
 </resources>
 

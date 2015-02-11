@@ -2,6 +2,7 @@ package com.innoteam.smartapps;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.app.FragmentManager;
 import android.app.ListActivity;
 import android.content.ActivityNotFoundException;
@@ -120,6 +121,8 @@ public class MainActivity extends ActionBarActivity {
                             Toast.makeText(MainActivity.this,
                                     R.string.services_select_message,
                                     Toast.LENGTH_SHORT).show();
+
+
                         }
                     });
 
@@ -142,11 +145,9 @@ public class MainActivity extends ActionBarActivity {
                             Toast.makeText(MainActivity.this,
                                     R.string.services_select_message,
                                     Toast.LENGTH_SHORT).show();
-                            DialogActivateService myDialog = new DialogActivateService ();
-                            myDialog.show ((FragmentManager)getFragmentManager(), "DialogoActivar");
 
-
-
+                            Intent intent = new Intent(view.getContext(), DialogActivate.class);
+                            startActivity(intent);
                         }
                     });
 

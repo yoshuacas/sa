@@ -15,10 +15,12 @@
     <string name="ok">Ok</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!--Dialog Activate Service texts-->
-    <string name="dialog_activate_service_title">Activar Servicio</string>
-    <string name="dialog_activate_service_ok">Activar</string>
-    <string name="dialog_activate_text_instructions">Service wil be one of the Premium Services included in your plan, it has no additional cost. With Qello you will be able to stream music concert and documentary videos.</string>
-
+    <!-- Dialog Activate Service texts -->
+    <string name="dialog_activate_text_header">Activar {Servicio}</string>
+    <string name="dialog_activate_text_ok">Activate</string>
+    <string name="dialog_activate_text_cancel">Cancel</string>
+    <string name="dialog_activate_text_instructions">{Servicio} wil be one of the Premium Services included in your plan, it has no additional cost. With {Servicio} you will be able to stream music concert and documentary videos.</string>
+    <string name="title_activity_dialog_activate">DialogActivate</string>
+    <string name="title_activity_result_activate">ResultActivate</string>
 
 </resources>
