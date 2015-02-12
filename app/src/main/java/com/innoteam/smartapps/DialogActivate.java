@@ -53,6 +53,7 @@ public class DialogActivate extends Activity {
         public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), ResultActivate.class);
             startActivity(intent);
+            finish();
         }
     };
 
