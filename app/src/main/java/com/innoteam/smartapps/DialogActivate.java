@@ -51,10 +51,6 @@ public class DialogActivate extends Activity {
     private View.OnClickListener mAcceptListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(DialogActivate.this,
-                    "activar",
-                    Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(v.getContext(), ResultActivate.class);
             startActivity(intent);
         }

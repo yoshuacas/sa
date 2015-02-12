@@ -90,8 +90,17 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#FF808080</item>
         <item name="fontPath">fonts/cronos_bold.otf</item>
-
     </style>
+
+
+    <!-- Resul Activate styling -->
+    <style name="ServiceInstructionText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF8bc33e</item>
+        <item name="fontPath">fonts/cronos_light.TTF</item>
+    </style>
+
+    @style/
 
     <!-- COLORS -->
     <color name="black">#FF000000</color>

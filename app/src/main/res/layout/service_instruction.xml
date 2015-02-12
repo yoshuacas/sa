@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/service_instruction_space"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/circle" android:gravity="center" android:text="6" style="@style/ButtonTextGreen"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/service_instruction_text"
+        android:layout_height="wrap_content" android:layout_weight="5" style="@style/ServiceInstructionText" android:text="@string/text_service_instruction"
+        android:layout_width="0dp" />
+
+
+</LinearLayout>

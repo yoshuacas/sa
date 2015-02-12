@@ -22,7 +22,15 @@
     <string name="dialog_activate_text_cancel">Cancel</string>
     <string name="dialog_activate_text_instructions">{Servicio} wil be one of the Premium Services included in your plan, it has no additional cost. With {Servicio} you will be able to stream music concert and documentary videos.</string>
 
-    <string name="title_activity_dialog_activate">DialogActivate</string>
-    <string name="title_activity_result_activate">ResultActivate</string>
+    <!-- Dialog Activate Result texts -->
+    <string name="text_result_activate_header">Your Service {Service} has been activated</string>
+    <string name="text_result_activate_subtitle">You can start using your service from {date}</string>
+    <string name="text_result_activate_instructions_header">Instructions to use:</string>
+    <string name="text_service_instruction">Haz click en el boton para crear tu cuenta</string>
+    <string name="text_result_activate_create_account">Crea tu cuenta</string>
+
+
+
+
 
 </resources>

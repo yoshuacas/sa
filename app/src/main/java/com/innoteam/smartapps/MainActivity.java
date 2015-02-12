@@ -115,6 +115,7 @@ public class MainActivity extends ActionBarActivity {
         public View getView(int position, View convertView, ViewGroup container) {
             if (convertView == null) {
                 convertView = getLayoutInflater().inflate(R.layout.service_item, container, false);
+
             }
 
 
@@ -125,9 +126,6 @@ public class MainActivity extends ActionBarActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(MainActivity.this,
-                                    R.string.services_select_message,
-                                    Toast.LENGTH_SHORT).show();
 
 
                         }
@@ -138,9 +136,6 @@ public class MainActivity extends ActionBarActivity {
                     {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(MainActivity.this,
-                                    R.string.services_select_message,
-                                    Toast.LENGTH_SHORT).show();
                             ImageView im = (ImageView)view.findViewById(R.id.service_action);
                             im.setImageResource(R.drawable.check_active_scheduled);
                         }
@@ -149,10 +144,6 @@ public class MainActivity extends ActionBarActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(MainActivity.this,
-                                    R.string.services_select_message,
-                                    Toast.LENGTH_SHORT).show();
-
                             Intent intent = new Intent(view.getContext(), DialogActivate.class);
                             startActivity(intent);
                         }

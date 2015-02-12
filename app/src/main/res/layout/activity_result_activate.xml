@@ -1,13 +1,119 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    tools:context="com.innoteam.smartapps.ResultActivate"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
 
-    tools:context="com.innoteam.smartapps.ResultActivate">
+    <ScrollView android:id="@+id/scroll_view_result_activate" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/text_result_activate_header"
+            android:layout_marginTop="10dp"
+            style="@style/HeaderText" />
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/text_result_activate_subtitle"
+            android:layout_marginTop="10dp"
+            style="@style/CategoryText" />
+
+
+        <FrameLayout
+            android:id="@+id/result_activate_service_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/result_activate_logo_service"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="6dp"
+                android:src="@drawable/logo_deezer"/>
+
+            <ImageView
+                android:id="@+id/result_activate_logo_service2"
+                android:src="@drawable/rounded_square_big"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dialog_activate_ok_button"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/green_button_left"
+                >
+
+                <ImageView
+                    android:id="@+id/dialog_activate_down_arrow"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/lightbox_activate_icon"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/dialog_activate_ok"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/text_result_activate_create_account"
+                    style="@style/ButtonTextWhite"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_result_activate_instructions_header"
+        style="@style/CategoryText"
+        android:layout_marginTop="10dp"/>
+
+    <ListView android:id="@+id/instructions_service_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/page_margin"
+        android:paddingRight="@dimen/page_margin"
+        android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
